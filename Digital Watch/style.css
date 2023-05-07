@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto Mono", monospace;
+  overflow: hidden;
 }
 
 body {
@@ -15,14 +16,19 @@ body {
   position: relative;
 }
 
+.container {
+  width: 90%;
+  max-width: 65rem;
+  margin: 15rem auto;
+}
+
 .digital-clock {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1, 2rem;
+  column-gap: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 11px;
-  max-width: 65rem;
-  margin: 20rem auto;
+  padding: 1.2rem;
   height: 22rem;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
@@ -90,11 +96,10 @@ body {
 .minutes-box::after {
   display: inline-block;
   content: ":";
-  font-size: #fff;
   color: #fff;
   font-size: 4.2rem;
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: -5px;
   transform: translateY(-50%);
 }
@@ -138,10 +143,16 @@ body {
 .stat {
   display: inline-block;
   font-weight: bold;
-  color: #b71278;
+  color: #810f55;
   letter-spacing: 0.75px;
   position: absolute;
   font-size: 1.8rem;
-  top: 15%;
+  top: 5%;
   right: 25%;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 52.5%;
+  }
 }
