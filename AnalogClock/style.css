@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #486eec;
+  padding: 4.8rem;
+}
+.clock {
+  width: 36rem;
+  height: 36rem;
+  border-radius: 50%;
+  border: 18px solid #252424;
+  background-color: #090808;
+  position: relative;
+  z-index: -3;
+}
+#twelve,
+#three,
+#six,
+#nine,
+#dash {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: bold;
+  position: absolute;
+  letter-spacing: 0.75px;
+}
+
+#twelve {
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+#three {
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.dash {
+  position: absolute;
+  font-size: 5.2rem;
+  color: #486eec;
+}
+
+.dash_1 {
+  right: 15%;
+  top: 15%;
+  transform: rotate(138deg);
+}
+
+.dash_2 {
+  right: 15%;
+  top: 65%;
+  transform: rotate(45deg);
+}
+
+.dash_3 {
+  left: 18%;
+  top: 70%;
+  transform: rotate(143deg);
+}
+
+.dash_4 {
+  left: 15%;
+  top: 15%;
+  transform: rotate(220deg);
+}
+
+#nine {
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+#six {
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+
+.clock-hands {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #486eec;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#hours_hand,
+#minutes_hand,
+#seconds_hand {
+  position: absolute;
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  background-color: #fff;
+  transform-origin: bottom;
+  left: 50%;
+  bottom: 50%;
+  z-index: -2;
+  /* background-color: #486eec; */
+}
+#hours_hand {
+  width: 0.8rem;
+  height: 6.4rem;
+  border-radius: 12px;
+  transform: rotate(30deg);
+}
+
+#minutes_hand {
+  width: 0.4rem;
+  height: 9.2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotate(330deg);
+}
+#seconds_hand {
+  width: 0.2rem;
+  height: 8.2rem;
+  background-color: #486eec;
+  transform: rotate(230deg);
+}
+
+/* media-quries */
+
+@media (max-width: 460px) {
+  html {
+    font-size: 42.5%;
+  }
+}
