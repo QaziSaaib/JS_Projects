@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(95, 89, 214);
+  font-family: "Sigmar", cursive;
+  letter-spacing: 0.85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+}
+
+.main-content {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-year {
+  display: inline-block;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.timer-box {
+  align-self: stretch;
+  background-color: rgba(40, 35, 128, 0.47);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.countdown-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  font-size: 3.6rem;
+  color: #fff;
+}
+#day_tag,
+#hour_tag,
+#minute_tag,
+#seconds_tag {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #fff;
+}
