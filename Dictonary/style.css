@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+  background-color: #9780f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 78rem;
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+.dictonary {
+  padding: 4.8rem;
+}
+
+.word_search_box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+
+#input_feild {
+  display: inline-block;
+  width: 70%;
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 3px solid #9a8adc;
+}
+#input_feild:focus {
+  outline: none;
+}
+
+#input_feild::placeholder {
+  font-size: 1.4rem;
+}
+
+#btn {
+  display: inline-block;
+  width: 20%;
+  color: #fff;
+  padding: 1.6rem 0.8rem;
+  background-color: #9a8adc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.word_details {
+  font-size: 2.8rem;
+}
+
+.word {
+  font-size: 2.4rem;
+}
+
+.meaning {
+  color: #3e3d3d;
+  font-weight: 500;
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  word-break: keep-all;
+}
+
+.use_case {
+  color: #3e3d3d;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 2.8rem;
+  margin-left: 1.2rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #9780f5;
+}
+
+#verb,
+#pronounce {
+  color: #5e575789;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#btn_voice {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.voice {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #9780f5;
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media (max-width: 475px) {
+  .dictonary {
+    padding: 2.4rem;
+  }
+  #input_feild {
+    width: 65%;
+  }
+  #btn {
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 25%;
+    color: #fff;
+    padding: 0.8rem;
+    background-color: #9a8adc;
+    border: none;
+    border-radius: 5px;
+  }
+}
