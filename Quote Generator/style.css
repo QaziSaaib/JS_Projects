@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: #0e0703;
+  font-family: "Finger Paint", cursive;
+  letter-spacing: 0.85px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 45rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  background-color: #f7c522;
+}
+.heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #c14e02;
+  font-weight: bold;
+}
+
+.main_content {
+  color: #f7c522;
+  font-weight: bold;
+  width: 100%;
+  padding: 2rem 2.4rem;
+  font-size: 2rem;
+  background-color: #c14e02;
+}
+
+.quote {
+  text-align: center;
+  opacity: 0;
+}
+
+.fade {
+  opacity: 1;
+  transition: all 1.15s ease-in-out;
+}
+
+/* .animate {
+  animation-name: fade_in;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  /* animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+/* animation-iteration-count: infinite;
+}
+
+animation
+@keyframes fade_in {
+   0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  } 
+  100% {
+    opacity: 100%;
+    animation-play-state: paused;
+  }
+} */
+
+#author {
+  display: inline-block;
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.btn_box {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #c14e02;
+}
+
+#btn {
+  font-family: "Finger Paint", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f7c522;
+  display: inline-block;
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.8em 1.2em;
+  background: none;
+  border: 2px solid #f7c522;
+  border-radius: 32px;
+  cursor: pointer;
+}
+#btn:hover {
+  opacity: 50%;
+  color: #000;
+  border: 2px solid #000;
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 52.5%;
+  }
+}
