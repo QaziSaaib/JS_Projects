@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #36363f;
+  font-family: "Prompt", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75rem;
+  background-color: #bfceea;
+}
+
+#headline {
+  font-size: 1.6rem;
+  color: #494848ae;
+  font-weight: 700;
+  letter-spacing: 0.85px;
+}
+
+.jokes {
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem 4.8rem;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.description {
+  width: 100%;
+  margin-top: 3.6rem;
+  text-align: center;
+  opacity: 1;
+}
+.fade {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2.8rem;
+  border: none;
+  background-color: #486db2;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn:hover {
+  opacity: 75%;
+}
+
+#setup {
+  font-size: 1.6rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 5px dashed slategray;
+}
+
+#punchline {
+  margin-top: 1.2rem;
+  color: rgb(235, 47, 47);
+  font-size: 2.4rem;
+}
+
+@media (max-width: 535px) {
+  html {
+    font-size: 52.5%;
+  }
+  .jokes {
+    padding: 2.2rem 3.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .jokes {
+    padding: 1.2rem;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+  #punchline {
+    font-size: 1.2rem;
+  }
+  #headlines {
+    font-size: 1.2rem;
+  }
+}
