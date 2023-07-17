@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  height: 100vh;
+  background-color: #2f1703;
+}
+
+.header {
+  /* height: 7.8rem; */
+  padding: 1.8rem 2.8rem;
+  background-color: #0000007a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+.app_name {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.search_box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+
+#input_box {
+  padding: 0.8rem 1.2rem;
+}
+#search_btn {
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  background-color: #f42c2c;
+  border-radius: 5px;
+  transition: all 0.75s;
+  cursor: pointer;
+}
+#search_btn:hover {
+  opacity: 40%;
+}
+
+@media (max-width: 685px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.2rem 2rem;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+
+.recipe-container {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28.5rem, 0.5fr));
+  gap: 2rem;
+  justify-content: center;
+}
+.meal-card {
+  background-color: #fff;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 8px 4px #fbc1824b;
+}
+
+#img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.meals-details {
+  margin: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  /* text-align: center; */
+}
+
+#meal-name {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+#meal-origin {
+  font-size: 1.4rem;
+  color: #343434;
+}
+
+#meal-category {
+  font-size: 1.6rem;
+  color: #1c1b1b;
+  text-align: center;
+}
+
+.status_message {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  grid-column: 1/-1;
+}
+
+#bold {
+  font-weight: 600;
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.recipe-btn {
+  display: inline-block;
+  padding: 1.2rem 1.8rem;
+  border: none;
+  background: #f42c2c;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: #fff;
+}
+
+.recipe-btn:hover {
+  background: none;
+  border: 3px solid #f42c2c;
+  /* color: #fff; */
+}
+
+.meal-card:hover .overlay {
+  opacity: 0.885;
+  pointer-events: all;
+}
+
+.recipe-link:link,
+.recipe-link:active,
+.recipe-link:visited,
+.recipe-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.recipe-details {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 6.4rem;
+}
+
+.meal-img {
+  text-align: center;
+}
+
+.meal-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  object-fit: contain;
+}
+
+.meal-preparation-details {
+  color: #fff;
+  width: 100%;
+}
+
+.meal-name {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.ingredients-box {
+  margin-top: 1.8rem;
+}
+
+#ingredients-heading {
+  margin-bottom: 1.8rem;
+  font-size: 2.4rem;
+}
+
+.ingredients {
+  font-size: 1.8rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 2.8rem;
+  border-bottom: 3px dotted #fff;
+}
+
+.recipe-instruction {
+  margin-top: 6.4rem;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  /* word-break: keep-all; */
+}
+
+.youtube-link:link,
+.youtube-link:visited,
+.youtube-link:hover,
+.youtube-link:active {
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8rem;
+  margin-top: 2.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+#youtube-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #f42c2c;
+}
+
+@media (min-width: 1024px) {
+  .recipe-container {
+    align-items: stretch;
+  }
+  .meals-details {
+    gap: 2.8rem;
+  }
+  #meal-name {
+    font-size: 2.4rem;
+  }
+  #meal-origin {
+    font-size: 1.6rem;
+  }
+  #meal-category {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 756px) {
+  .recipe-container {
+    gap: 2.4rem;
+  }
+  .recipe-details {
+    flex-direction: column;
+  }
+  .meal-img img {
+    width: 65%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 525px) {
+  html {
+    font-size: 52.5%;
+  }
+  #meal-name,
+  .meal-name {
+    font-size: 2.8rem;
+  }
+  #ingredients-heading {
+    font-size: 1.8rem;
+  }
+  .recipe-instruction {
+    font-size: 1.6rem;
+  }
+}
+.btn-back {
+  display: inline-block;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.4em 0.6em;
+  background-color: #f42c2c;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  transition: all 0.75s;
+  cursor: pointer;
+}
+.btn-back:hover {
+  opacity: 45%;
+}
+
+/* animation loading */
+.loading {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-top: 3px solid orange;
+  animation-name: loading;
+  animation-delay: 250ms;
+  animation-duration: 1.5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+@keyframes loading {
+  0% {
+    border-top: 3px solid #e86d26;
+    border-left: 3px solid rgb(255, 94, 0);
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top: 3px solid orangered;
+    border-left: 3px solid orangered;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 3px solid indianred;
+    border-left: 3px solid indianred;
+  }
+}
