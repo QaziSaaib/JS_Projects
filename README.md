@@ -11,5 +11,5 @@
 ## 7)Dictionary App:https://simple-dictionary-qms.netlify.app/
 ## 8)Weather App:https://check-weatherapp-qms.netlify.app/
 ## 9)Random Joke:https://random-jokes-qms.netlify.app/
-## 10)Country App:https://random-jokes-qms.netlify.app/
+## 10)Country App:https://country-stat-qms.netlify.app/
 
