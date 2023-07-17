@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f8ff;
+  font-family: "Nunito", sans-serif;
+}
+
+.weather_container {
+  color: #fff;
+  width: 85%;
+  max-width: 68rem;
+  margin: 25px auto;
+  padding: 2.4rem;
+  background: linear-gradient(to left, #1e73fc, #35ccdd);
+  border-radius: 17px;
+  box-shadow: 0 0 15px 2px #1e73fc76;
+}
+.search_box {
+  /* border: 2px solid darkred; */
+  display: flex;
+  align-items: center;
+  /* padding: 0 0.8rem; */
+  gap: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.search_btn_container {
+  display: flex;
+  align-items: center;
+}
+
+#search_btn {
+  background: none;
+  background-color: #fff;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.75s ease-in;
+}
+
+.nav_search {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.nav_close {
+  width: 2rem;
+  height: 2rem;
+  display: none;
+}
+#input_region {
+  flex-grow: 1;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 16px;
+}
+#input_region:focus {
+  outline: none;
+}
+#input_region::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  color: #abadb086;
+  font-weight: 500;
+}
+
+.weather_details {
+  margin-bottom: 2rem;
+}
+
+.current_forecast {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin: 3.2rem 0;
+}
+
+.temperature {
+  font-size: 7.2rem;
+  font-weight: 700;
+}
+.weather_description {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.day_date_info {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #131415b6;
+  text-align: center;
+}
+
+#weather_now_img {
+  width: 12.8rem;
+  height: 12.8rem;
+}
+.region_name {
+  text-align: center;
+}
+.region_name span {
+  display: inline-block;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#weather_now_img {
+  display: inline-block;
+  transform: scale(1.4);
+}
+
+.summary_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wind_info,
+.humidity_info {
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #13141593;
+}
+
+#wind_img,
+#humidity_img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+#wind_img + p,
+#humidity_img + p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 58.5%;
+  }
+  .weather_container {
+    width: 90%;
+    padding: 1.8rem 1rem;
+  }
+  #weather_now_img {
+    transform: scale(1.2);
+  }
+  .current_forecast {
+    flex-direction: column;
+  }
+}
+
+.weather {
+  /* display: none; */
+  opacity: 0;
+  height: 0;
+  transition: all 0.75s ease-in-out;
+}

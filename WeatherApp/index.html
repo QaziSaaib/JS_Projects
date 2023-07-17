@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌡️ Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather_container">
+      <div class="search_box">
+        <input
+          type="text"
+          id="input_region"
+          placeholder="enter city/country name"
+        />
+        <div class="search_btn_container">
+          <button id="search_btn">
+            <ion-icon
+              name="search-outline"
+              id="navigation"
+              class="nav_search"
+            ></ion-icon>
+            <ion-icon
+              name="close-outline"
+              id="navigation"
+              class="nav_close"
+            ></ion-icon>
+          </button>
+        </div>
+      </div>
+      <div class="weather">
+        <div class="weather_details">
+          <div class="region_name"><span>New York</span></div>
+          <div class="current_forecast">
+            <img src="/imgs/mist.png" id="weather_now_img" />
+            <h2 class="temperature">26°C</h2>
+            <h3 class="weather_description">Thunderstorm</h3>
+            <!-- <div class="day_date_info">
+              <p class="day_date_year">Monday,17 May</p>
+            </div> -->
+          </div>
+          <div class="day_date_info">
+            <p class="day_date_year">Monday,17 May</p>
+          </div>
+        </div>
+        <div class="summary_info">
+          <div class="wind_info">
+            <img src="/imgs/wind.png" id="wind_img" />
+            <p id="wind_val">13km/h</p>
+            <p>Wind</p>
+          </div>
+          <div class="humidity_info">
+            <img src="/imgs/humidity.png" id="humidity_img" />
+            <p id="humidity_val">24%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
