@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #0fb5f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.container {
+  width: 90%;
+  max-width: 48rem;
+}
+
+.search_box {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+#inpt_field {
+  font-family: "Poppins", sans-serif;
+  color: #0d5696;
+  font-weight: 500;
+  width: 70%;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #3082e6c4;
+  padding-bottom: 0.8rem;
+}
+#inpt_field:focus {
+  outline: none;
+}
+
+#inpt_field::placeholder {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: #75737380;
+}
+
+#search_btn {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  width: 25%;
+  border: none;
+  background: none;
+  padding: 1.2rem 3.2rem;
+  background-color: #0871cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+#search_btn:hover {
+  opacity: 60%;
+}
+
+.country_box {
+  background-color: #f0f8ff;
+  padding: 2.8rem;
+  border-radius: 17px;
+}
+.country_details {
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#img {
+  display: block;
+  width: 16rem;
+}
+
+#tag {
+  font-size: 1.8rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 1.2rem;
+  align-self: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 2rem;
+}
+#value {
+  font-size: 1.8rem;
+  word-wrap: break-word;
+  color: #4a4848;
+}
+.not_found {
+  font-size: 1.8rem;
+  color: #e43023;
+}
+
+@media (max-width: 425px) {
+  .list {
+    gap: 1.2rem;
+  }
+  .item {
+    font-size: 1.6rem;
+  }
+  #value {
+    font-size: 1.4rem;
+  }
+  .country_box {
+    padding: 2rem;
+  }
+  #inpt_field {
+    width: 60%;
+  }
+  #search_btn {
+    width: 30%;
+    padding: 0.8rem 4.2rem;
+  }
+  .not_found {
+    font-size: 1.2rem;
+  }
+}
