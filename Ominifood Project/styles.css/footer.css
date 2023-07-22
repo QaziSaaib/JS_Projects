@@ -1,0 +1,88 @@
+.footer-section {
+  padding: 12.8rem 0;
+  border-top: 1px solid rgba(108, 108, 108, 0.226);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.footer {
+  /* background-color: rgb(176, 165, 245); */
+  padding: 3.2rem;
+  line-height: 1.2;
+  /* font-size: 1.4rem; */
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+#links .social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: all 0.75s;
+  cursor: pointer;
+}
+#links .social-icon:hover {
+  color: #222;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.2rem;
+}
+.col-1,
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col-2 address {
+  font-size: 1.6rem;
+}
+.col-2 .contact p {
+  font-size: 1.4rem;
+  color: #777;
+}
+.copyright {
+  font-size: 1.2rem;
+  margin-top: 4.8rem;
+  line-height: 1.6;
+  color: #777;
+}
+.col ul {
+  margin-top: 1.8rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+.col ul li a {
+  color: #777;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.col ul li a:hover {
+  color: #333;
+}
+
+.col-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
